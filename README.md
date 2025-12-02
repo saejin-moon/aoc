@@ -2,7 +2,7 @@
 my advent of code solutions compiled in one place, written in javascript with bun.
 
 ## template
-```{javascript}
+```javascript
 // file reading
 const file = Bun.file("./input.txt");
 const input = (await file.text()).trim();
