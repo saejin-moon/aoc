@@ -34,7 +34,6 @@ void function main(input) {
     const max = +bounds[1];
     for (let i = min; i <= max; i++){
       let str = i.toString();
-      // optimized solution
       const len = str.length;
       let bool = false;
       for (let j = 1; j <= len / 2; j++){
@@ -47,25 +46,6 @@ void function main(input) {
         }
       }
       if (bool) sum += i;
-      // original solution
-      /*
-      for (let j = 1; j <= str.length / 2; j++){
-        let bool = true;
-        let sub = str.slice(0, j);
-        let k = j;
-        while(k < str.length){
-          if (sub !== str.slice(k, k + j)){
-            bool = false;
-            break;
-          }
-          k += j;
-        }
-        if(bool){
-          sum += +i;
-          break;
-        }
-      }
-      */
     }
   }
   console.log(sum);
