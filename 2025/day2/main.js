@@ -34,6 +34,21 @@ void function main(input) {
     const max = +bounds[1];
     for (let i = min; i <= max; i++){
       let str = i.toString();
+      // optimized solution
+      const len = str.length;
+      let bool = false;
+      for (let j = 1; j <= len / 2; j++){
+        if (len % j !== 0) continue;
+        const sub = str.slice(0, j);
+        const rep = sub.repeat(len / j);
+        if(rep === str){
+          bool = true;
+          break;
+        }
+      }
+      if (bool) sum += i;
+      // original solution
+      /*
       for (let j = 1; j <= str.length / 2; j++){
         let bool = true;
         let sub = str.slice(0, j);
@@ -50,6 +65,7 @@ void function main(input) {
           break;
         }
       }
+      */
     }
   }
   console.log(sum);
