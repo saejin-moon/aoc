@@ -28,3 +28,4 @@ void function main(input) {
 ### 2025
 - day 1: 25m
 - day 2: 20m
+- day 3: 121m
