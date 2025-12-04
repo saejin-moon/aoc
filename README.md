@@ -29,3 +29,4 @@ void function main(input) {
 - day 1: 25m
 - day 2: 20m
 - day 3: 121m
+- day 4: 30m
