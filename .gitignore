@@ -1,0 +1,11 @@
+# rs
+target/
+# cpp
+*.out
+*.o
+*.exe
+main
+build/
+
+# aoc inputs
+input.txt
